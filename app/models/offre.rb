@@ -1,0 +1,3 @@
+class Offre < ApplicationRecord
+
+end

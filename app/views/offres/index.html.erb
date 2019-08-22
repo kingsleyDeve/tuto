@@ -1,0 +1,24 @@
+<h1>Offres</h1>
+ <% @offres.each do |offre| %>
+
+<h2><%= offre.poste %></h2>
+
+<p><%= offre.contrat %></p>
+
+
+<p>
+
+  <a href="<%= offre_path(offre.id) %>" class="btn btn-primary" > lire la suite</a>
+  <a href="<%= edit_offre_path(offre.id) %>" class="btn btn-warning" > modifer</a>
+  <a href="<%= offre_path(offre.id) %>" class="btn btn-danger" data-method="DELETE"> supprimer</a>
+
+
+</p>
+
+ <% end %>
+<p>
+
+  <a href="<%= new_offre_path %>" class="btn btn-success" > ajouter</a>
+
+
+</p>

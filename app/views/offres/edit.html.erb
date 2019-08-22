@@ -1,0 +1,21 @@
+<h1>Modifier l'offre</h1>
+
+<%= form_for @offre do |o| %>
+
+<div class="form-group">
+  <label>poste</label>
+  <%= o.text_field :poste, class: 'form-control' %>
+</div>
+
+<div class="form-group">
+  <label>contrat</label>
+  <%= o.text_field :contrat, class: 'form-control' %>
+</div>
+
+<div class="form-group">
+
+  <button type="submit" class="btn btn-success" >Modifier</button>
+
+</div>
+
+<% end %>
